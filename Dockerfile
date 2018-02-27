@@ -26,7 +26,8 @@ RUN echo "deb http://http.kali.org/kali kali-rolling main contrib non-free" > /e
     
 RUN apt-get update && apt-get install -y \
   nmap \
-  tcpdump
+  tcpdump \
+  route
   
 ENV DEBIAN_FRONTEND noninteractive
 RUN set -x \
